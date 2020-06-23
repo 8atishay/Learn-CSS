@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="transform.css" rel="stylesheet"  />
+    <link href="colors.css" rel="stylesheet"  />
+    <link href="grad and shadow.css" rel="stylesheet"  />
+    <style>
+        @keyframes anim1{
+            from{background-color:cornflowerblue;}
+            to{background-color:orangered;}
+        }
+        #anim1 {
+            animation-name: anim1;
+            animation-duration: 2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: 4;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes anim2{
+            0%{background-color: pink; left:0px; top: 0px;}
+            25%{background-color: yellow; left:200px; top:0px;}
+            75%{background-color: blue; left:0px; top:200px;}
+            100%{background-color: lawngreen; left:0px; top:0px;}
+        }
+        #anim2 {
+            position: relative;
+            animation-name: anim2;
+            animation-duration: 4s;
+            animation-iteration-count: 4;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            
+        }
+    </style> 
+</head>
+<body>
+    <table style="font-size:30px">
+        <tr>
+            <td id="anim1" style="width: 200px;">
+                <p id="RGBA" class="shadow1 transformmatrix1" >RGBA, box shadow, transform matrix</p>
+                <p id="RGB" class="transformskewX2" >RGB opacity 0.8, transform: skewX</p>
+                <p id="HSL" class="shadow3 transformskewY3">HSL, text shadow, skewY</p>
+                <p id="HSLA" class="shadow4 rotate4" >HSLA, neon, rotate:-30</p>
+
+                <p id="grad1" class="shadow5">gradient vertical, box shadow inset</p>
+            </td>
+            <td style="width: 200px; padding-left:80px; padding-right:50px;">
+                <p id="grad2" class="rotateXY6">gradient to right, rotateX:45deg, rotateY:30deg</p>
+                <p id="grad3" class="transformtranslate6" >gradient degree, transform:translate</p>
+                <p id="grad4" >gradient multiple</p>
+            </td>
+            <td id="anim2" style="width: 200px">
+                <p id="grad5" >radial gradient</p>
+                <p id="grad6" >circle radial gradient</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

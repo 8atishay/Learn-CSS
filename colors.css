@@ -1,0 +1,24 @@
+#RGBA {
+    border: 2px solid black;
+    background-color: rgba(67, 29, 206,0.2);
+    margin: 20px
+}
+/* In RGBA stands for alfa (transparency)*/
+#HSL {
+    border: 2px solid black;
+    background-color: hsl(120, 100%, 50%);
+}
+/* In HSL 0,330 is red;
+                120 is green; 240 is blue;
+                S is Saturation 100% is white;
+                L is for mixing of hue and saturation*/
+#HSLA {
+    border: 2px solid black;
+    background-color: hsla(120, 100%, 50%,0.3);
+}
+
+#RGB {
+    border: 2px solid black;
+    background-color: rgb(67, 29, 206);
+    opacity: 0.8;
+}

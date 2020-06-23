@@ -1,0 +1,28 @@
+/*matrix(n,n,n,n,n,n) represents
+              matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )*/
+/*we also have these fuctions individually
+              scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()*/
+
+.transformmatrix1 {
+    transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+}
+
+.transformtranslate6 {
+    transform: translate(15px,15px);
+}
+
+.transformskewX2 {
+    transform: skew(30deg,0deg) translateX(20px);
+}
+
+.transformskewY3 {
+    transform: skew(0deg,20deg);
+}
+
+.rotateXY6 {
+    transform: rotateX(45deg) rotateY(30deg);
+}
+
+.rotate4 {
+    transform: rotate(-30deg);
+}
